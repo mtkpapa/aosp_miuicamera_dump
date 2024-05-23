@@ -216,7 +216,7 @@
                 <action android:name="com.miui.bugreport.intent.ACTION_DUMP_CACHED_LOG"/>
             </intent-filter>
         </provider>
-        <service android:enabled="true" android:exported="true" android:icon="@drawable/ic_remote_camera_control" android:label="@string/video_cast_service_name" android:name="com.xiaomi.camera.videocast.VideoCastTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+        <service android:enabled="false" android:exported="false" android:icon="@drawable/ic_remote_camera_control" android:label="@string/video_cast_service_name" android:name="com.xiaomi.camera.videocast.VideoCastTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
