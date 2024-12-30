@@ -50,7 +50,7 @@
     <bool name="pref_camera_professional_audio_map_default">true</bool>
     <bool name="pref_camera_professional_histogram_default_off">false</bool>
     <bool name="pref_camera_professional_histogram_default_on">true</bool>
-    <bool name="pref_camera_proximity_lock_default">true</bool>
+    <bool name="pref_camera_proximity_lock_default">false</bool>
     <bool name="pref_camera_quick_shot_anim_enable_default">true</bool>
     <bool name="pref_camera_quick_shot_enable_default">true</bool>
     <bool name="pref_camera_quick_tap_shot_default">false</bool>
