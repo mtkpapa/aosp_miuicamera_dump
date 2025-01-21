@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_tint_preview_bottom_margin">44.099976dip</dimen>
+    <dimen name="custom_tint_preview_top_margin">23.099976dip</dimen>
+    <dimen name="previewlist_height">880.89844dip</dimen>
+    <dimen name="previewlist_width">392.6953dip</dimen>
+    <dimen name="tint_AItip_font_select">6.799988dip</dimen>
+    <dimen name="tint_AItip_margin_top_select">52.349976dip</dimen>
+    <dimen name="tint_AItip_select_height">11.299988dip</dimen>
+    <dimen name="tint_AItip_select_pd_left">4.0dip</dimen>
+    <dimen name="tint_AItip_select_pd_top">2.1999817dip</dimen>
+    <dimen name="tint_AItip_select_width">31.299988dip</dimen>
+    <dimen name="tint_text_margin_top_select">323.6953dip</dimen>
+    <dimen name="tint_text_select_font">7.799988dip</dimen>
+    <dimen name="tint_text_select_margin">11.0dip</dimen>
+</resources>
