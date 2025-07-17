@@ -1782,7 +1782,7 @@
 .end method
 
 .method public gotoGallery()V
-    .locals 10
+    .locals 11
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -2034,6 +2034,9 @@
     new-instance v5, Landroid/content/Intent;
 
     invoke-direct {v5, v6, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    const/high16 v10, 0x10000000 # FLAG_ACTIVITY_NEW_TASK
+    invoke-virtual {v5, v10}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 26
     :goto_0
