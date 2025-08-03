@@ -19719,239 +19719,27 @@
 .end method
 
 .method public static setBrightnessRampRate(I)V
-    .locals 2
+    .locals 0
 
     .line 1
-    sget-object v0, Lcom/xiaomi/camera/rx/CameraSchedulers;->sCameraWorkScheduler:Lio/reactivex/Scheduler;
-
-    new-instance v1, LOooO0O0/OooO0O0/OooO00o/Oooo0;
-
-    invoke-direct {v1, p0}, LOooO0O0/OooO0O0/OooO00o/Oooo0;-><init>(I)V
-
-    invoke-virtual {v0, v1}, Lio/reactivex/Scheduler;->scheduleDirect(Ljava/lang/Runnable;)Lio/reactivex/disposables/Disposable;
 
     return-void
 .end method
 
 .method public static setBrightnessRampRate1(I)V
-    .locals 8
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v1, "setBrightnessRampRate1: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "CameraUtil"
-
-    invoke-static {v1, v0}, Lcom/android/camera/log/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    const-string v0, "android.os.IPowerManager.Stub"
-
-    .line 2
-    :try_start_0
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    const-string v2, "asInterface"
-
-    const/4 v3, 0x1
-
-    new-array v4, v3, [Ljava/lang/Class;
-
-    .line 3
-    const-class v5, Landroid/os/IBinder;
-
-    const/4 v6, 0x0
-
-    aput-object v5, v4, v6
-
-    invoke-virtual {v0, v2, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v0
-
-    const/4 v2, 0x0
-
-    new-array v4, v3, [Ljava/lang/Object;
-
-    const-string/jumbo v5, "power"
-
-    .line 4
-    invoke-static {v5}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
-
-    move-result-object v5
-
-    aput-object v5, v4, v6
-
-    invoke-virtual {v0, v2, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    const-string v2, "android.os.IPowerManager"
-
-    .line 5
-    invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v2
-
-    const-string/jumbo v4, "setBrightnessRampRate"
-
-    new-array v5, v3, [Ljava/lang/Class;
-
-    .line 6
-    sget-object v7, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    aput-object v7, v5, v6
-
-    invoke-virtual {v2, v4, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v2
-
-    new-array v3, v3, [Ljava/lang/Object;
-
-    .line 7
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
-
-    aput-object p0, v3, v6
-
-    invoke-virtual {v2, v0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    const-string p0, "modify screen light ramp rate failed, so screen light will rise slowly!"
-
-    .line 8
-    invoke-static {v1, p0}, Lcom/android/camera/log/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :goto_0
     return-void
 .end method
 
 .method public static setBrightnessRampRate2(I)V
-    .locals 6
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v1, "setBrightnessRampRate2: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "CameraUtil"
-
-    invoke-static {v1, v0}, Lcom/android/camera/log/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v0, 0x0
-
-    if-nez p0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    move p0, v0
-
-    :goto_0
-    const-string v2, "display"
-
-    .line 2
-    invoke-static {v2}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
-
-    move-result-object v2
-
-    if-nez v2, :cond_1
 
     return-void
-
-    .line 3
-    :cond_1
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
-
-    move-result-object v3
-
-    .line 4
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
-
-    move-result-object v4
-
-    :try_start_0
-    const-string v5, "android.view.android.hardware.display.IDisplayManager"
-
-    .line 5
-    invoke-virtual {v3, v5}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
-
-    .line 6
-    invoke-virtual {v3, p0}, Landroid/os/Parcel;->writeBoolean(Z)V
-
-    const p0, 0xfffffd
-
-    .line 7
-    invoke-interface {v2, p0, v3, v4, v0}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 8
-    :goto_1
-    invoke-virtual {v4}, Landroid/os/Parcel;->recycle()V
-
-    .line 9
-    invoke-virtual {v3}, Landroid/os/Parcel;->recycle()V
-
-    goto :goto_2
-
-    :catchall_0
-    move-exception p0
-
-    goto :goto_3
-
-    :catch_0
-    :try_start_1
-    const-string/jumbo p0, "setBrightnessRampRate2 failed!"
-
-    .line 10
-    invoke-static {v1, p0}, Lcom/android/camera/log/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    goto :goto_1
-
-    :goto_2
-    return-void
-
-    .line 11
-    :goto_3
-    invoke-virtual {v4}, Landroid/os/Parcel;->recycle()V
-
-    .line 12
-    invoke-virtual {v3}, Landroid/os/Parcel;->recycle()V
-
-    .line 13
-    throw p0
 .end method
 
 .method public static setFlickSensorEnable(Z)V
