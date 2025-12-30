@@ -6957,6 +6957,7 @@
     <public type="drawable" name="xiazhi" id="0x7f0809eb" />
     <public type="drawable" name="yanku" id="0x7f0809ec" />
     <public type="drawable" name="yuanqi" id="0x7f0809ed" />
+    <public type="drawable" name="logo_monochrome" id="0x7f0809ee" />
     <public type="fraction" name="drop_down_anim_pivot_x" id="0x7f090000" />
     <public type="fraction" name="immersion_menu_anim_pivot_x" id="0x7f090001" />
     <public type="id" name="ALT" id="0x7f0a0000" />
